@@ -11,9 +11,9 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sshagent(['techports_jenkins']) {
+                sshagent(['techportsjen']) {
     //scp <src_dir> user@tomcatIP:/tomcat/webapps
-    sh "scp -o StrictHostKeyChecking=no target/*.war techports@18.209.227.129:/home/techports/tomcat/webapps"
+    sh "scp -o StrictHostKeyChecking=no target/*.war techports@54.159.9.218:/home/techports/tomcat/webapps"
 }
             }
         }
