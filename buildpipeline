@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sshagent(['techportsjen']) {
     //scp <src_dir> user@tomcatIP:/tomcat/webapps
-    sh "scp -o StrictHostKeyChecking=no target/*.war techports@54.159.9.218:/home/techports/tomcat/webapps"
+    sh "scp -o StrictHostKeyChecking=no target/*.war techports@34.201.7.185:/home/techports/tomcat/webapps"
 }
             }
         }
